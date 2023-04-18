@@ -101,6 +101,9 @@ article > p{
 footer{
     height: 44px;
     background-image: linear-gradient(to bottom, #3CA6A6,#026773); 
+    min-width: 300px;
+    max-width: 1000px;
+    
 }
 footer > p{
    color: var(--cor05);
