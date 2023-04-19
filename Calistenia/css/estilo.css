@@ -50,11 +50,6 @@ header > p{
      font-family: var(--font_sans-serif);
      text-shadow: -2px 2px 6px black;
 }
-nav{
-    margin-left: 10px;
-    margin: 0px;
-}
-
 
 nav > a:hover{
     background-color: var(--cor03);
@@ -75,11 +70,13 @@ header > nav > a{
     text-shadow: -2px 2px 6px black;
     transition-duration: 0.5;
 }
+
+
 main > article{
-    min-width: 300px;
-    max-width: 1000px;
     padding: 20px;
     margin: auto;
+    max-width: 1000px;
+    min-width: 320px;
     background-color: white;
     box-shadow: -4px 4px 5px rgba(0, 0, 0, 0.281);
     border-bottom-left-radius:10px;
@@ -117,3 +114,9 @@ footer > p >a:hover{
     text-decoration: underline;
 }
 
+@media(max-width:520px ){
+    header > nav {
+        margin-top: 26px;
+
+    }
+}
