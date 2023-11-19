@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:var(--color1);
+}
+
+:root{
+   --color1:#454C69;
+   --color2:#333B52;
+   --color3:#DF5175;
+   --color4:#CFCFCF;
+   --color5:#FFFAFA;
+}
+
+#container_pai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container_filho{
+   background-color: var(--color2);
+   padding: 40px;
+   height: 420px;
+   width: 420px;
+   display:flex;
+   flex-direction:column; 
+   justify-content: center;
+   align-items: center;
+   border-radius: 10px;
+   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.486);
+}
+
+h1{
+    color: white;
+    text-align: center;
+    transform: translateY(-35px);
+}
+
+input{
+    margin: 5px;
+    padding: 17px;
+    font-size: 18px;
+    width: 100px;
+    height: 50px;
+    background-color: var(--color4);
+    color: var(--color1);
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 5px;
+    transform: translateY(-20px);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.486);
+}
+
+button{
+    padding: 13px;
+    margin: 6px;
+    width: 120px;
+    background-color: var(--color3);
+    color:white;
+    border: none;
+    opacity: 0.7;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.486);
+}
+
+div #res{
+    color: var(--color4);
+    margin: 6px;
+    font-size: 20px;
+    transform: translateY(17px);
+}
+
+input:hover{
+    background-color: white;
+}
+
+button:hover{
+    background-color:#be254b;
+    color: var(--color5);
+    opacity: 1;
+}
+
+#footer{
+    color: var(--color4);
+    transform: translateY(40px);
+}
+
+#footer a{
+    text-decoration: none;
+    color: var(--color4);
+    text-decoration: underline;
+}
+
+#footer a:hover{
+    text-decoration: none;
+} 
+
+@media screen and (max-width: 600px) {
+    #container_filho {
+       width: 100%;
+       margin: 10px;
+    }
+ }
+ 
